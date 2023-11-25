@@ -24,6 +24,7 @@ class Widget(QWidget,Ui_MainWindow):
                       float(self.SpinBoxH.value()),
                       float(self.SpinBoxK.value()),]
         check = CheckParameters(parameters)
+        
         if check == "":
             Widget.HandleOutputWidget(parameters,LinearList(parameters),self)
             #LinearList(parameters)
@@ -37,9 +38,11 @@ class Widget(QWidget,Ui_MainWindow):
         leftBorder = inputParameters[0]
         rightBorder = inputParameters[1]
         step = inputParameters[2]
-        self.tableWidget.insertColumn(0)
-        self.tableWidget.insertColumn(1)
-        self.tableWidget.insertColumn(2)
+        #self.tableWidget.insertColumn(0)
+        #self.tableWidget.insertColumn(1)
+        #self.tableWidget.insertColumn(2)
+        self.tableWidget.setColumnCount(3)
+        
         for i in np.arange(leftBorder,rightBorder+step,step):
             
             currentRowCount =self.tableWidget.rowCount() #necessary even when there are no rows in the table

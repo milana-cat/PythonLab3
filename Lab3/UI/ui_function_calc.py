@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(20, 40, 211, 61))
         self.label_7.setAutoFillBackground(False)
-        self.label_7.setPixmap(QPixmap(u"FunctionPic.png"))
+        self.label_7.setPixmap(QPixmap(u"UI/FunctionPic.jpg"))
         self.label_7.setScaledContents(True)
         self.label_7.setAlignment(Qt.AlignCenter)
         MainWindow.centralWidget = self.centralwidget
